@@ -5,10 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <h1>Weather App</h1>
+    <div class="container">
+      <div class="weather-app">
+        <div class="weather-app-wrapper">
+          <h1>Florence</h1>
+          <ul>
+            <li>Sunday, February 6</li>
+            <li>09:00 am</li>
+            <li>Sunny</li>
+          </ul>
+          <div class="row">
+            <div class="col-6">
+              <img src="src/cloudy-weather.png" alt="Cloudy" width="200px" />
+              8 °C | °F
+            </div>
+            <div class="col-6">
+              <ul>
+                <li>Precipitation: 1%</li>
+                <li>Humidity: 87%</li>
+                <li>Wind: 3km/h</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <small>
+          <a
+            href="https://github.com/cdebadereau/vanilla-weather-app"
+            target="blank"
+          >
+            Open-source code</a
+          >
+          by Cyrielle de Badereau de Saint Martin
+        </small>
+      </div>
+    </div>
     <script src="src/app.js"></script>
   </body>
 </html>
