@@ -23,6 +23,7 @@
       href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
@@ -30,11 +31,11 @@
       <div class="weather-app">
         <div class="weather-app-wrapper">
           <div class="overview">
-            <h1>Florence</h1>
+            <h1 id="city"></h1>
             <ul>
               <li>Sunday, February 6</li>
               <li>09:00 am</li>
-              <li>Sunny</li>
+              <li id="description">Sunny</li>
             </ul>
           </div>
           <div class="row">
@@ -47,7 +48,7 @@
                   class="float-left"
                 />
                 <div class="float-left temperature-description">
-                  <strong>8</strong>
+                  <strong id="temperature"></strong>
                   <span class="units">
                     °C |
                     <a href="#">°F</a>
@@ -57,9 +58,12 @@
             </div>
             <div class="col-6">
               <ul>
-                <li><strong>Precipitation:</strong> 1%</li>
-                <li><strong>Humidity:</strong> 87%</li>
-                <li><strong>Wind:</strong> 3km/h</li>
+                <li>
+                  <strong>Humidity:</strong> <span id="humidity">1</span>%
+                </li>
+                <li>
+                  <strong>Wind:</strong> <span id="wind-speed">3</span>km/h
+                </li>
               </ul>
             </div>
           </div>
