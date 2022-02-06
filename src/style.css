@@ -13,10 +13,13 @@ h1 {
 ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 li {
   line-height: 20px;
+  margin: 0;
+  padding: 0;
 }
 
 .weather-app {
@@ -36,21 +39,22 @@ li {
   margin-bottom: 30px;
 }
 
-.temperature {
-  font-size: 80px;
-}
-
 .current-temperature img {
   height: 80px;
   width: 80px;
 }
 
-.description {
-  display: inline;
-  position: relative;
-  bottom: -24px;
+.temperature-description strong {
+  font-size: 80px;
 }
 
-.description ul {
+.temperature-description {
   display: inline;
+  position: relative;
+  top: 24px;
+}
+
+.temperature-description .units {
+  position: relative;
+  top: -44px;
 }
