@@ -29,20 +29,35 @@
     <div class="container">
       <div class="weather-app">
         <div class="weather-app-wrapper">
-          <h1>Florence</h1>
-          <ul>
-            <li>Sunday, February 6</li>
-            <li>09:00 am</li>
-          </ul>
+          <div class="overview">
+            <h1>Florence</h1>
+            <ul>
+              <li>Sunday, February 6</li>
+              <li>09:00 am</li>
+            </ul>
+          </div>
           <div class="row">
-            <div class="col-4">
-              <img src="img/cloudy-weather.png" alt="Cloudy" width="200px" />
-            </div>
-            <div class="col-4">
-              <ul>
-                <li><strong>8</strong> °C | <a href="#">°F</a></li>
-                <li>Sunny</li>
-              </ul>
+            <div class="col-8">
+              <div class="clearfix current-temperature">
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+                  alt="Cloudy"
+                  width="50px"
+                  class="float-left"
+                />
+                <div class="float-left description">
+                  <ul>
+                    <li>
+                      <strong class="temperature">8</strong>
+                      <span class="units">
+                        °C |
+                        <a href="#">°F</a>
+                      </span>
+                    </li>
+                    <li><span class="weather-description"> Sunny </span></li>
+                  </ul>
+                </div>
+              </div>
             </div>
             <div class="col-4">
               <ul>

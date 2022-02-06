@@ -28,3 +28,26 @@ li {
   padding: 30px;
   margin-bottom: 3px;
 }
+
+.overview {
+  margin-bottom: 30px;
+}
+
+.temperature {
+  font-size: 80px;
+}
+
+.current-temperature img {
+  height: 80px;
+  width: 80px;
+}
+
+.description {
+  display: inline;
+  position: relative;
+  bottom: -24px;
+}
+
+.description ul {
+  display: inline;
+}
