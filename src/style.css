@@ -62,4 +62,15 @@ li::first-letter {
 .temperature-description .units {
   position: relative;
   top: -44px;
+  text-decoration: none;
+}
+
+.temperature-description .active {
+  color: black;
+  font-weight: bold;
+  cursor: default;
+}
+
+.temperature-description .active:hover {
+  text-decoration: none;
 }
