@@ -64,14 +64,25 @@ function displayTemperature(response) {
   iconElement.setAttribute(
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
-  );
+  ); //we changed the src of the img with an api url
   iconElement.setAttribute("alt", response.data.weather[0].description);
   //setAttribute (); allows to change the html
 }
 
-let apiKey = "459f06da33a24f62f603d05f7a2963f4";
-let unit = "metric";
-let city = "Bali";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${unit}`;
+function searchCity(city) {
+  let apiKey = "459f06da33a24f62f603d05f7a2963f4";
+  let unit = "metric";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${unit}`;
+  axios.get(apiUrl).then(displayTemperature);
+}
 
-axios.get(apiUrl).then(displayTemperature);
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#city-input");
+  searchCity(cityInputElement.value);
+}
+
+searchCity("Bali");
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
