@@ -1,13 +1,13 @@
 body {
   font-family: "Quicksand", sans-serif;
-  background-color: #cee5d0;
+  background-color: #deedf0;
 }
 h1 {
   font-family: "Pacifico", cursive;
   font-size: 56px;
   font-weight: 100;
   color: #181d31;
-  margin-bottom: 0;
+  margin-bottom: 25px;
 }
 
 ul {
@@ -26,27 +26,43 @@ li::first-letter {
   text-transform: capitalize;
 }
 
+small a {
+  text-decoration: none;
+}
+
 .weather-app {
   max-width: 700px;
   margin: 20px auto;
 }
 
 .weather-app-wrapper {
-  border: 1px solid #fed2aa;
+  border: 1px solid #dddbc7;
   border-radius: 10px;
   box-shadow: 10px 3px 11px rgba(0, 0, 0, 5%);
   padding: 30px;
   margin-bottom: 3px;
-  background-color: #f3f0d7;
+  background-color: #fff5eb;
 }
 
 .overview {
   margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.overview .description {
+  font-weight: bold;
 }
 
 .current-temperature img {
   height: 80px;
   width: 80px;
+  position: relative;
+  top: -50px;
+}
+
+.current-temperature {
+  height: 80px;
+  padding-left: 50px;
 }
 
 .temperature-description strong {
@@ -56,21 +72,26 @@ li::first-letter {
 .temperature-description {
   display: inline;
   position: relative;
-  top: 24px;
+  top: -28px;
 }
 
 .temperature-description .units {
   position: relative;
   top: -44px;
-  text-decoration: none;
 }
 
 .temperature-description .active {
   color: black;
   font-weight: bold;
   cursor: default;
+  text-decoration: none;
 }
 
 .temperature-description .active:hover {
   text-decoration: none;
+}
+
+.temperature-info {
+  font-size: 16px;
+  padding-left: 50px;
 }
