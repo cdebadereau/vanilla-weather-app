@@ -50,12 +50,18 @@
             </div>
           </form>
           <div class="overview">
-            <h1 id="city"></h1>
-            <ul>
-              <li id="date"></li>
-              <li id="time"></li>
-              <li id="description" class="description"></li>
-            </ul>
+            <div class="row">
+              <div class="col-6">
+                <ul>
+                  <li id="date"></li>
+                  <li id="time"></li>
+                  <li id="description" class="description"></li>
+                </ul>
+              </div>
+              <div class="col-6">
+                <h1 id="city"></h1>
+              </div>
+            </div>
           </div>
           <div class="row">
             <div class="col-6">
@@ -75,19 +81,28 @@
             </div>
             <div class="col-6 temperature-info">
               <div class="row">
-                <div class="col-6"><strong>Humidity:</strong></div>
+                <div class="col-6 info-elements">
+                  <strong>Humidity:</strong>
+                </div>
                 <div class="col-6"><span id="humidity"></span>%</div>
               </div>
               <div class="row">
-                <div class="col-6"><strong>Wind:</strong></div>
+                <div class="col-6 info-elements">
+                  <strong>Wind:</strong>
+                </div>
                 <div class="col-6"><span id="wind-speed"></span>km/h</div>
               </div>
               <div class="row">
-                <div class="col-6"><strong>Feels like:</strong></div>
+                <div class="col-6 info-elements">
+                  <strong>Feels like:</strong>
+                </div>
                 <div class="col-3"><span id="feels-like"></span>°C</div>
               </div>
-                <strong><span id="max-temperature"></span>°</strong> |
-                <span id="min-temperature"></span>°
+              <div class="row">
+                <div class="col-6 info-elements">
+                  <strong> <span id="max-temperature"></span>°</strong> |
+                  <span id="min-temperature"></span>°
+                </div>
               </div>
             </div>
           </div>
