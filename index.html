@@ -69,17 +69,26 @@
                 />
                 <div class="float-left temperature-description">
                   <strong id="temperature"></strong>
-                  <span class="units">°C</span>
+                  <span class="unit">°C</span>
                 </div>
               </div>
             </div>
             <div class="col-6 temperature-info">
-              <ul>
-                <li><strong>Humidity:</strong> <span id="humidity"></span>%</li>
-                <li>
-                  <strong>Wind:</strong> <span id="wind-speed"></span>km/h
-                </li>
-              </ul>
+              <div class="row">
+                <div class="col-6"><strong>Humidity:</strong></div>
+                <div class="col-6"><span id="humidity"></span>%</div>
+              </div>
+              <div class="row">
+                <div class="col-6"><strong>Wind:</strong></div>
+                <div class="col-6"><span id="wind-speed"></span>km/h</div>
+              </div>
+              <div class="row">
+                <div class="col-6"><strong>Feels like:</strong></div>
+                <div class="col-3"><span id="feels-like"></span>°C</div>
+              </div>
+                <strong><span id="max-temperature"></span>°</strong> |
+                <span id="min-temperature"></span>°
+              </div>
             </div>
           </div>
           <div class="weather-forecast" id="weather-forecast"></div>

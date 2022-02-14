@@ -106,6 +106,9 @@ function displayTemperature(response) {
   let timeElement = document.querySelector("#time");
   let dateElement = document.querySelector("#date");
   let iconElement = document.querySelector("#icon");
+  let feelsLikeElement = document.querySelector("#feels-like");
+  let maxTemperatureElement = document.querySelector("#max-temperature");
+  let minTemperatureElement = document.querySelector("#min-temperature");
 
   celsiusTemperature = response.data.main.temp;
 
@@ -122,7 +125,9 @@ function displayTemperature(response) {
   ); //we changed the src of the img with an api url
   iconElement.setAttribute("alt", response.data.weather[0].description);
   //setAttribute (); allows to change the html
-
+  feelsLikeElement.innerHTML = Math.round(response.data.main.feels_like);
+  maxTemperatureElement.innerHTML = Math.round(response.data.main.temp_max);
+  minTemperatureElement.innerHTML = Math.round(response.data.main.temp_min);
   getForecast(response.data.coord);
 }
 
@@ -142,4 +147,4 @@ function handleSubmit(event) {
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
-searchCity("Bali");
+searchCity("Florence");
